@@ -41,7 +41,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .head-block{
-   background-image: url(../img/bgr\ img.png);
+   background-image: url(../img/background.png);
 }
 .head-block__container{
    max-width: 1235px;
@@ -223,7 +223,7 @@ flex: 0 1 570px;
 .chek-blue::before{
    content: "";
    display: inline-block;
-   background: url(../img/checkmark-circle\ \(2\)\ 1.png) 0 0 no-repeat;
+   background: url(../img/checkmark-circleblue.png) 0 0 no-repeat;
    width: 20px;
    height: 20px;
    margin-right: 5px;
@@ -237,7 +237,7 @@ flex: 0 1 570px;
 .chek-green::before{
    content: "";
    display: inline-block;
-   background: url(../img/checkmark-circle\ \(2\)\ green.png) 0 0 no-repeat;
+   background: url(../img/checkmark-circlegreen.png) 0 0 no-repeat;
    width: 20px;
    height: 20px;
    margin-right: 5px;
@@ -253,7 +253,7 @@ flex: 0 1 570px;
 .exit::before{
    content: "";
    display: inline-block;
-   background: url(../img/exit\ erfwerf.png) 0 0 no-repeat;
+   background: url(../img/exit.png) 0 0 no-repeat;
    width: 20px;
    height: 20px;
    margin-right: 5px;
