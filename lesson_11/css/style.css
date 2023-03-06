@@ -1,0 +1,289 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+.wrapper{
+   min-height: 100%;
+   overflow: hidden;
+}
+
+.header__container{
+   max-width: 1165px;
+   margin: 0 auto;
+}
+
+.header{
+	position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: white;
+}
+
+
+.header__main{
+	vertical-align: middle;
+	padding: 30px 0;
+}
+
+.header__logo {
+	display: inline-block;
+	vertical-align: middle;
+}
+.header__categories {
+   position: relative;
+   display: inline-block;
+   border-radius: 5px;
+   line-height: 24px;
+   padding: 9px 20px;
+   background-color: #F4F7FF;
+   vertical-align: middle;
+   text-align: center;
+   margin: 0 45px;
+}
+
+.header__categories-link{
+	color: black;
+	font-size: 16px;
+	font-family: "Inter";
+	font-weight: 500;
+	margin-right: 13px;
+	padding-bottom: 100px;
+}
+
+.header__img-arrow{
+	vertical-align: middle;
+}
+
+.header__menu {
+	display: inline-block;
+	margin-right: 120px;
+}
+.header__menu-list {
+	display: inline-block;
+}
+.header__menu-list:not(:last-child){
+	margin-right: 35px;
+}
+
+.header__list-link {
+	color: black;
+	font-size: 16px;
+	font-family: "Inter";
+	font-weight: 500;
+	transition: all 0.4s;
+}
+
+.header__list-link:hover{
+	color: blue;
+	text-decoration: underline;
+}
+
+
+.header__icons {
+	display: inline-block;
+}
+
+
+.header__icon:not(:last-child){
+	margin-right: 24px;
+}
+
+.categoties-menu {
+	position: absolute;
+   top: 195%;
+   left: 0;
+   background-color: white;
+   border-radius: 5px;
+   min-width: 180px;
+   padding: 22px 24px;
+   display: none;
+	text-align: start;
+}
+.header__categories:hover .categoties-menu{
+	display: block;
+}
+
+.categoties-menu::before{
+	content: "";
+   background: url(../img/triangl.png) no-repeat;
+   display: inline-block;
+   width: 32px;
+   height: 20px;
+   position: absolute;
+   top: -11px;
+   left: 10px;
+}
+
+
+.categories-menu__list:not(:last-child) {
+	margin-bottom: 13px;
+}
+
+
+.categories-menu__link {
+	font-family: "Inter";
+   color: #637381;
+   font-size: 16px;
+   font-weight: 400;
+	transition: all 0.4s;
+}
+
+.categories-menu__link:hover{
+	color: blue;
+	text-decoration: underline;
+}
+
+.categories-menu__img{
+	vertical-align: middle;
+}
+
+.categories-menu--fashion-margin{
+	margin-right: 45px;
+	display: inline-block;
+}
+
+.fashion__block{
+	position: absolute;
+	top: 25px;
+	left: 100%;
+	background-color: white;
+	border-radius: 5px;
+	min-width: 655px;
+	display: none;
+}
+
+.categories-menu__list:hover .fashion__block{
+	display: block;
+}
+
+.fashion__item{
+	display: inline-block;
+	padding: 30px;
+}
+
+.fashion__item-title{
+	font-family: "Inter";
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.fashion__item-link{
+	font-family: "Inter";
+	font-size: 16px;
+	font-weight: 400;
+	color: #637381;
+}
+
+.fashion__item-list:not(:last-child) {
+	margin-bottom: 13px;
+}
+
+
+.fashion__item-discount{
+	position: absolute;
+	top: 30px;
+	left: 402px;
+}
+
+.fashion__discount-img{
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+
+.fashion__discount-text{
+	display: inline-block;
+	position: relative;
+	top: 65px;
+	left: 51px;
+	z-index: 5;
+}
+
+.fashion__discount-p{
+	font-family: "Inter";
+	font-size: 40px;
+	line-height: 115%;
+	color: white;
+	font-weight: 600;
+	text-align: center;
+}
+
+.fashion__discount-sub-p{
+	font-family: "Inter";
+	font-size: 20px;
+	color: white;
+	font-weight: 400;
+}
+
+.fashion__discount-item{
+	display: inline-block;
+	position: relative;
+	top: 125px;
+	left: -75px;
+	z-index: 2;
+	border-radius: 5px;
+	padding: 5px 15px;
+	background-color: #3056D3;
+}
+
+.fashion__discount-link{
+	color: white;
+	font-size: 10px;
+	font-family: "Inter";
+	border-radius: 5px;
+	padding: 10px 20px;
+	background-color: #3056D3;
+}
+
+
+
+
+
+.content__page{
+	background-color: #9fa9b1;
+	max-width: 1165px;
+	margin: 0 auto;
+	font-size: 18px;
+}
+
+.content{
+	margin-top: 100px;
+}
