@@ -1,0 +1,162 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+.wrapper {
+	min-height: 100%;
+}
+.content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background: url(../img/uzhgorod.jpeg) 0 0 / 100% 100% no-repeat;
+	visibility: visible;
+	width: 100%;
+	height: 100%;
+}
+
+.car {
+	position: absolute;
+	margin: 100px;
+	top: 220px;
+	left: 450px;
+	animation-name: translate;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes translate{
+	0%{
+		transform: translate(0 0);
+	}
+	100%{
+		transform: translate(-1600px, 0);
+	}
+}
+
+.car__glass {
+	position: absolute;
+	top: 0;
+	left: 450px;
+	clip-path: polygon(46% 75%, 79% 75%, 100% 100%, 0% 100%);
+	background-color: rgb(3, 3, 80);
+	width: 350px;
+	height: 230px;
+}
+
+.car__body {
+	position: absolute;
+	top: 50px;
+	left: 300px;
+	clip-path: polygon(59% 74%, 87% 75%, 99% 83%, 100% 100%, 68% 100%, 32% 100%, 0 100%, 2% 83%, 32% 76%);
+	background-color:  rgb(3, 3, 80);
+	width: 550px;
+	height: 230px;
+}
+.car__whils {
+	display: inline-block;
+	position: relative;
+	top: 250px;
+	left: 380px;
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	border: 5px dashed  white;
+	border-radius: 50%;
+	animation-name: rotate;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+}
+
+@keyframes rotate{
+	0%{
+		transform: rotate(0);
+	}
+	100%{
+		transform: rotate(-360deg);
+	}
+}
+
+.car__whils--right{
+	display: inline-block;
+	position: absolute;
+	top: 250px;
+	left: 680px;
+	width: 100px;
+	height: 100px;
+	z-index: 5;
+	background-color: black;
+	border: 5px dashed  white;
+	border-radius: 50%;
+	animation-name: rotate;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+}
+
+.car__whils span{
+	color: white;
+	display: inline-block;
+	position: absolute;
+	top: 35px;
+	left: 35px;
+	animation-name: pendulum;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+	animation-direction: alternate;
+}
+
+@keyframes pendulum{
+	0%{
+		transform: rotate(10deg);
+	}
+	50%{
+		transform: rotate(0deg)
+	}
+	100%{
+		transform: rotate(-10deg);
+	}
+}
+
+.car__whils--right span{
+	color: white;
+	display: inline-block;
+	position: absolute;
+	top: 35px;
+	left: 35px;
+}
+
