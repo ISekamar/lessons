@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,500,600,700,800,900" rel="stylesheet"/>
+   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,400,500" rel="stylesheet"/>
+   <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet"/>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <div class="wrapper">
+      <div class="personalinfo">
+         <div class="personalinfo__contailner">
+            <div class="personalinfo__title title"><h2>Billing Details</h2></div>
+            <form action="" method="get">
+               <div class="personalinfo__row">
+                  <div class="personalinfo__item">
+                  <input class="personalinfo__input" type="text" name="username" required placeholder="First name*">
+                  </div>
+                  <div class="personalinfo__item">
+                  <input class="personalinfo__input" type="text" name="username" required placeholder="Last name*">
+                  </div>
+                  <div class="personalinfo__item">
+                  <input class="personalinfo__input" type="text" name="address" required placeholder="Address*">
+                  </div>
+                  <div class="personalinfo__item">
+                  <input class="personalinfo__input" type="text" name="address" required placeholder="Address line 2">
+                  </div>
+                  <div class="personalinfo__item select-item__after">
+                     <select class="personalinfo__item-select" name="list" required>
+                        <option class="personalinfo__item-option option-item__none" value>Country*</option>
+                        <option class="personalinfo__item-option" value="">Italy</option>
+                        <option class="personalinfo__item-option" value="">France</option>
+                        <option class="personalinfo__item-option" value="">Germany</option>
+                        <option class="personalinfo__item-option" value="">Hungary</option>
+                     </select>
+                  </div>
+                  <div class="personalinfo__item">
+                  <input class="personalinfo__input" type="text" name="city" required placeholder="City/Town*">
+                  </div>
+                  <div class="personalinfo__item">
+                  <input class="personalinfo__input" type="text" name="postcode" required placeholder="Postcode / ZIP*">
+                  </div>
+                  <div class="personalinfo__item">
+                  <input class="personalinfo__input" type="tel" name="numb" required placeholder="Phone*">
+                  </div>
+                  <div class="personalinfo__item">
+                  <input class="personalinfo__input" type="text" name="username" required placeholder="Postcode / ZIP*">
+                  </div>
+                  <div class="personalinfo__item">
+                  <input class="personalinfo__input" type="tel" name="numb" required placeholder="Phone*">
+                  </div>
+                  <textarea class="personalinfo__item-textarea" name="message" placeholder="Additional information"></textarea>
+               </div>
+               <div class="personalinfo__checkbox">
+                  <div class="personalinfo__checkbox-item">
+                     <input class="personalinfo__checkbox-input" id="account-1" checked name="create" value="yes" type="checkbox">
+                     <label class="personalinfo__checkbox-label" for="account-1">Create Account</label>
+                  </div>
+                  <div class="personalinfo__checkbox-item">
+                     <input class="personalinfo__checkbox-input" id="scipping-1" name="create" value="yes" type="checkbox">
+                     <label class="personalinfo__checkbox-label" for="scipping-1">Ship to a different address?</label>
+                  </div>
+               </div>
+               <div class="personalinfo__discount">
+                  <div class="personalinfo__discount-title title">
+                     <h2>Apply Coupon to get discount!</h2>
+                  </div>
+                  <div class="personalinfo__discount-items">
+                        <input class="personalinfo__discount-input" type="text" name="code" placeholder="Coupon code">
+                        <button class="personalinfo__discount-button" type="button">Apply Code</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+      <div class="ecommerce">
+         <div class="ecommerce__container">
+            <div class="ecommerce__title title-2">
+               <h2>Shipping Address</h2>
+            </div>
+            <div class="ecommerce__head">
+               <form action="" method="post">
+                  <div class="ecommerce__forms">
+                     <label class="ecommerce__forms-label" for="email-1">Email Address
+                        <span>*</span>
+                     </label>
+                     <input class="ecommerce__forms-input" id="email-1" type="email" required placeholder="roni_cost@example.com" name="email">
+                  </div>
+                  <div class="ecommerce__forms">
+                     <label class="ecommerce__forms-label" for="pass-2">Password</label>
+                     <input class="ecommerce__forms-input" id="pass-2" type="password" required placeholder="******************" name="pass">
+                  </div>
+                  <div class="ecommerce__forms">
+                     <label class="ecommerce__forms-label" for="zip-1">Zip/Postal Code</label>
+                     <input class="ecommerce__forms-input" id="zip-1" type="text" required name="zip">
+                  </div>
+                  <div class="ecommerce__text">
+                     <p>You already have an account with us. Sign in or continue as guest.</p>
+                  </div>
+                  <div class="ecommerce__login">
+                     <button type="submit">login</button>
+                     <a href="#">Forgot Your Password?</a>
+                  </div>
+               </form>
+            </div>
+            <div class="ecommerce__registration">
+               <div class="ecommerce__forms">
+                  <label class="ecommerce__forms-label" for="name-2">First Name
+                     <span>*</span>
+                  </label>
+                  <input class="ecommerce__forms-input" id="name-2" type="username" required name="name">
+               </div>
+               <div class="ecommerce__forms">
+                  <label class="ecommerce__forms-label" for="l-name">Last Name
+                     <span>*</span>
+                  </label>
+                  <input class="ecommerce__forms-input" id="l-name" type="username" required name="name">
+               </div>
+               <div class="ecommerce__forms">
+                  <label class="ecommerce__forms-label" for="company-1">Company</label>
+                  <input class="ecommerce__forms-input" id="company-1" type="text" name="company">
+               </div>
+               <div class="ecommerce__forms">
+                  <label class="ecommerce__forms-label" for="street-add">Street Address
+                     <span>*</span>
+                  </label>
+                  <div class="commerce__forms-group">
+                     <input class="ecommerce__forms-input" id="street-add" type="username" required name="name">
+                     <input class="ecommerce__forms-input" id="street-add" type="username" required name="name">
+                     <input class="ecommerce__forms-input" id="street-add" type="username" required name="name">
+                  </div>
+               </div>
+               <div class="ecommerce__forms">
+                  <label class="ecommerce__forms-label" for="country-1">Country</label>
+                  <input class="ecommerce__forms-input" id="country-1" type="username" required name="name">
+               </div>
+               <div class="ecommerce__form-select">
+                  <label class="ecommerce__forms-label" for="state-2">State/Province
+                     <span>*</span>
+                  </label>
+                     <select name="list" id="state-2" required>
+                        <option class="ecommerce__select-item">Please select a region, state or province</option>
+                        <option value="California">California</option>
+                     </select>
+               </div>
+            </div>
+            <div class="ecommerce__shipping-methods methods-shipping">
+               <div class="methods-shipping__title title-2">
+                  <h2>Shipping Methods</h2></div>
+               <div class="methods-shipping__radio-flex">
+                  <div class="methods-shipping__radio-item item-radio">
+                     <div class="item-radio__radio">
+                        <input class="item-radio__input" id="price-1" name="price" type="radio">
+                        <label class="item-radio__label" for="price-1">$5.00</label>
+                     </div>
+                     <div class="item-radio__text-blok">
+                        <div class="item-radio__text">Fixed</div>
+                        <div class="item-radio__text">Flat Rate</div>
+                     </div>
+                  </div>
+                  <div class="methods-shipping__radio-item item-radio">
+                     <div class="item-radio__radio">
+                        <input class="item-radio__input" id="price-2" name="price" type="radio">
+                        <label class="item-radio__label" for="price-2">$10.00</label>
+                     </div>
+                     <div class="item-radio__text-blok">
+                        <div class="item-radio__text">Table Rate</div>
+                        <div class="item-radio__text">Best Way</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="methods-shipping__buttons">
+                  <button class="methods-shipping__button-next" type="submit">next</button>
+                  <button class="methods-shipping__button-back" type="button">Back</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
